@@ -12,10 +12,14 @@ class ArticleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        //
+    public function index() {
+        $articles = Article::all();
+        return view('articleList', [
+            'articles' => $articles
+        ]);
     }
+
+    
 
     /**
      * Show the form for creating a new resource.
@@ -83,3 +87,4 @@ class ArticleController extends Controller
         //
     }
 }
+
