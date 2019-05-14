@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Article;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 
 class ArticleController extends Controller
 {
@@ -16,6 +17,13 @@ class ArticleController extends Controller
         $articles = Article::all();
         return view('articleList', [
             'articles' => $articles
+        ]);
+    }
+
+    public function dejarik() {
+        $dejariks = DB::table('articles')->where('category', 'Dejarik')->get();
+                return view('articleList', [
+            'dejariks' => $dejariks
         ]);
     }
 
@@ -85,6 +93,13 @@ class ArticleController extends Controller
     public function destroy(Article $article)
     {
         //
+    }
+
+    public function secret() {
+        if(Gate::allows('superUsers-only', auth()->user())) {
+            return view('secret');
+        }
+        return view('welcome');
     }
 }
 

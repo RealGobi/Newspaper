@@ -18,3 +18,4 @@ Route::get('/', function () {
 Route::get('/articles', 'ArticleController@index');
 
 
+Route::get('/secret', 'ArticleController@secret');
