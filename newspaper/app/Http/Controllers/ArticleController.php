@@ -20,14 +20,13 @@ class ArticleController extends Controller
         ]);
     }
 
-    public function dejarik() {
-        $dejariks = DB::table('articles')->where('category', 'Dejarik')->get();
-                return view('articleList', [
-            'dejariks' => $dejariks
+    public function dragon() {
+        $dragons = Article::where('category', 'Dragon Dressage')->get();
+
+        return view('dragonDressage', [
+            'dragons' => $dragons
         ]);
     }
-
-    
 
     /**
      * Show the form for creating a new resource.

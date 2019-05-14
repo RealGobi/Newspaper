@@ -20,7 +20,7 @@
                     <a href="https://laravel.com/docs">Quidditch</a>
                     <a href="https://laracasts.com">Lightsaber Fencing</a>
                     <a href="https://laravel-news.com">Dejarik</a>
-                    <a href="https://blog.laravel.com">Dragon Dressage</a>
+                    <a href="#/dragonDressage">Dragon Dressage</a>
                     <a href="https://nova.laravel.com">Fot-Boule</a>
                     <a href="https://forge.laravel.com">Sewer Surfin</a>
                     <a href="https://github.com/laravel/laravel">Anbo-Jitsu</a>
