@@ -16,6 +16,8 @@ Route::get('/', function () {
 });
 
 Route::get('/dragonDressage', 'ArticleController@dragon');
+Route::get('/fotBoule', 'ArticleController@fotBoule');
+Route::get('/sewerSurfin', 'ArticleController@sewer');
 Route::get('/articles', 'ArticleController@index');
 
 

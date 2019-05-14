@@ -27,6 +27,22 @@ class ArticleController extends Controller
         ]);
     }
 
+    public function sewer() {
+        $sewers = Article::where('category', 'Sewer Surfin')->get();
+
+        return view('sewerSurfin', [
+            'sewers' => $sewers
+        ]);
+    }
+
+    public function fotBoule() {
+        $fots = Article::where('category', 'Fot-Boule')->get();
+
+        return view('fotBoule', [
+            'fots' => $fots
+        ]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
