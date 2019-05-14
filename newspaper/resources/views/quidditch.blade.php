@@ -7,12 +7,17 @@
     @if (count($quidditchs) > 0)
 
     @foreach($quidditchs as $quidditch) 
-        <li>{{ $quidditch->headline }}</li>
     
-    
+
+
+<li><a href="{!! url('articles/'.$quidditch->id) !!}">{!! $quidditch->headline !!}</a></li>
+      
+
     @endforeach
     @endif
 
     </div>
 
 @endsection
+
+

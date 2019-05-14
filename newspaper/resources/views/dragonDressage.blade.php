@@ -7,7 +7,7 @@
     @if (count($dragons) > 0)
 
     @foreach($dragons as $dragon) 
-        <li>{{ $dragon->headline }}</li>
+    <li><a href="{!! url('articles/'.$dragon->id) !!}">{!! $dragon->headline !!}</a></li>
     
     
     @endforeach

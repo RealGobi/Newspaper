@@ -7,7 +7,7 @@
     @if (count($dejariks) > 0)
 
     @foreach($dejariks as $dejarik) 
-        <li>{{ $dejarik->headline }}</li>
+    <li><a href="{!! url('articles/'.$dejarik->id) !!}">{!! $dejarik->headline !!}</a></li>
     
     
     @endforeach

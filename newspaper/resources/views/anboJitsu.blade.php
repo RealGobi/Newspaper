@@ -7,7 +7,7 @@
     @if (count($anboJitsu) > 0)
 
     @foreach($anboJitsu as $anbo) 
-        <li>{{ $anbo->headline }}</li>
+    <li><a href="{!! url('articles/'.$anbo->id) !!}">{!! $anbo->headline !!}</a></li>
     
     
     @endforeach
