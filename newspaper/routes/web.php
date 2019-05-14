@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/blernsball', 'ArticleController@blernsball');
+Route::get('/anboJitsu', 'ArticleController@anboJitsu');
 Route::get('/dragonDressage', 'ArticleController@dragon');
 
 Route::get('/quidditch', 'ArticleController@quidditch');
@@ -24,6 +26,8 @@ Route::get('/lightsaber', 'ArticleController@lightsaber');
 Route::get('/dejarik', 'ArticleController@dejarik');
 
 
+Route::get('/fotBoule', 'ArticleController@fotBoule');
+Route::get('/sewerSurfin', 'ArticleController@sewer');
 Route::get('/articles', 'ArticleController@index');
 
 

@@ -8,41 +8,8 @@
 
         <title>Fantasy Sport News</title>
 
-        <link href="{{asset('scss/style.css')}}" rel="stylesheet" type="text/css"/>
-                 </head>
+    </head>
     <body>
-            <div class="headermenu">
-                <div class="title m-b-md">
-                    Fantasy Sport News
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Quidditch</a>
-                    <a href="https://laracasts.com">Lightsaber Fencing</a>
-                    <a href="https://laravel-news.com">Dejarik</a>
-                    <a href="https://blog.laravel.com">Dragon Dressage</a>
-                    <a href="https://nova.laravel.com">Fot-Boule</a>
-                    <a href="https://forge.laravel.com">Sewer Surfin</a>
-                    <a href="https://github.com/laravel/laravel">Anbo-Jitsu</a>
-                    <a href="https://github.com/laravel/laravel">Blernsball</a>
-                </div>
-            </div>
-       
-            <div class="content">
-
-
-<h1>All Articles</h1>
-
-
-
- <a href=" {{ url('/secret') }}">Protected page</a> 
-
-<br><br>
-<a href=" {{ url('/articles') }}">Check all articles</a>
-
-
-</div>
-
 
     </body>
 </html>

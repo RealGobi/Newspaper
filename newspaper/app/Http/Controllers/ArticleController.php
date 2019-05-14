@@ -27,6 +27,36 @@ class ArticleController extends Controller
             'dragons' => $dragons
         ]);
     }
+    public function anboJitsu() {
+        $anboJitsu = Article::where('category', 'Anbo-Jitsu')->get();
+
+        return view('anboJitsu', [
+            'anboJitsu' => $anboJitsu
+        ]);
+    }
+    public function blernsball() {
+        $blernsball = Article::where('category', 'blernsball')->get();
+
+        return view('blernsball', [
+            'blernsball' => $blernsball
+        ]);
+    }
+    
+    public function sewer() {
+        $sewers = Article::where('category', 'Sewer Surfin')->get();
+
+        return view('sewerSurfin', [
+            'sewers' => $sewers
+        ]);
+    }
+
+    public function fotBoule() {
+        $fots = Article::where('category', 'Fot-Boule')->get();
+
+        return view('fotBoule', [
+            'fots' => $fots
+        ]);
+    }
 
     public function quidditch() {
         $quidditchs = Article::where('category', 'Quidditch')->get();
