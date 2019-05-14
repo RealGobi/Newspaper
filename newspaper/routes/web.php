@@ -18,6 +18,8 @@ Route::get('/', function () {
 Route::get('/blernsball', 'ArticleController@blernsball');
 Route::get('/anboJitsu', 'ArticleController@anboJitsu');
 Route::get('/dragonDressage', 'ArticleController@dragon');
+Route::get('/fotBoule', 'ArticleController@fotBoule');
+Route::get('/sewerSurfin', 'ArticleController@sewer');
 Route::get('/articles', 'ArticleController@index');
 
 

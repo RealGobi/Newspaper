@@ -4,9 +4,9 @@
 @section('main')
 <div>
     <h1>Blernsball</h1>
-    @if (count($Blernsball) > 0)
+    @if (count($blernsball) > 0)
 
-    @foreach($Blernsball as $blernball) 
+    @foreach($blernsball as $blernball) 
         <li>{{ $blernball->headline }}</li>
     
     

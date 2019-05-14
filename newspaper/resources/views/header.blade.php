@@ -20,11 +20,11 @@
                     <a href="https://laravel.com/docs">Quidditch</a>
                     <a href="https://laracasts.com">Lightsaber Fencing</a>
                     <a href="https://laravel-news.com">Dejarik</a>
-                    <a href="#/dragonDressage">Dragon Dressage</a>
-                    <a href="https://nova.laravel.com">Fot-Boule</a>
-                    <a href="https://forge.laravel.com">Sewer Surfin</a>
                     <a href="/Newspaper/newspaper/public/anboJitsu">Anbo-Jitsu</a>
                     <a href="/Newspaper/newspaper/public/blernsball">Blernsball</a>
+                    <a href="/Newspaper/newspaper/public/dragonDressage">Dragon Dressage</a>
+                    <a href="/Newspaper/newspaper/public/fotBoule">Fot-Boule</a>
+                    <a href="/Newspaper/newspaper/public/sewerSurfin">Sewer Surfin</a>
                 </div>
             </div>
        
