@@ -26,7 +26,21 @@ class ArticleController extends Controller
             'dragons' => $dragons
         ]);
     }
+    public function anboJitsu() {
+        $anboJitsu = Article::where('category', 'Anbo-Jitsu')->get();
 
+        return view('anboJitsu', [
+            'anboJitsu' => $anboJitsu
+        ]);
+    }
+    public function blernsball() {
+        $blernsball = Article::where('category', 'blernsball')->get();
+
+        return view('blernsball', [
+            'Blernsball' => $blernsball
+        ]);
+    }
+    
     /**
      * Show the form for creating a new resource.
      *

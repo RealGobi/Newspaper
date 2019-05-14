@@ -23,8 +23,8 @@
                     <a href="#/dragonDressage">Dragon Dressage</a>
                     <a href="https://nova.laravel.com">Fot-Boule</a>
                     <a href="https://forge.laravel.com">Sewer Surfin</a>
-                    <a href="https://github.com/laravel/laravel">Anbo-Jitsu</a>
-                    <a href="https://github.com/laravel/laravel">Blernsball</a>
+                    <a href="/Newspaper/newspaper/public/anboJitsu">Anbo-Jitsu</a>
+                    <a href="/Newspaper/newspaper/public/blernsball">Blernsball</a>
                 </div>
             </div>
        
