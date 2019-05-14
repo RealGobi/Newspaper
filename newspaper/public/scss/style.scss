@@ -53,6 +53,11 @@ h1 {
 
 .title {
     font-size: 84px;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
 }
 
 .links>a {
@@ -64,6 +69,7 @@ h1 {
     letter-spacing: .1rem;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: 700;
     transition: .4s;
 }
 
@@ -89,4 +95,26 @@ h1 {
     -moz-column-count: 2;
     column-count: 2;
     text-align: left;
+}
+
+.user {
+
+    padding: 1rem;
+    
+    .logout-a {
+        text-decoration: none;
+        color:black;
+        font-family: 'MedievalSharp', cursive;
+        font-weight: 700;
+        padding: 1rem 1.5rem;
+        text-transform: uppercase;
+        font-size: 13px;
+        transition: .4s;
+
+        &:hover {
+            color: #ffeeb7;
+        }
+    }
+
+
 }

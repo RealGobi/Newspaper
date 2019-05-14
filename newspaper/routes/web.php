@@ -32,3 +32,6 @@ Route::get('/articles', 'ArticleController@index');
 
 
 Route::get('/secret', 'ArticleController@secret');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
