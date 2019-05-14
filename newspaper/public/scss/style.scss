@@ -16,7 +16,8 @@ body {
     height: 100vh;
 }
 
-.content {
+.content,
+.startcontent {
     background: rgba(252, 241, 211, 0.5);
     padding: 0.5rem 0rem 4rem 0rem;
     margin: 0 auto;
@@ -74,6 +75,16 @@ h1 {
 .m-b-md {
     margin-bottom: 30px;
     font-family: 'Cinzel Decorative', cursive;
+}
+
+.m-b-md>a {
+    text-decoration: none;
+    color: #fffdcb;
+    transition: .4s;
+}
+
+.m-b-md>a:hover {
+    color: #fffd82;
 }
 
 .articlelist {

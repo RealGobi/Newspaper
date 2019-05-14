@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html lang="eng">
     <head>
@@ -9,16 +7,15 @@
 
 
         <title>Fantasy Sport News</title>
-        @extends('startcontent')
 
-        @extends('header')
+        <link href="{{asset('scss/style.css')}}" rel="stylesheet" type="text/css"/>
+                 </head>
+    <body>
+            <div class="content">
 
 
-
-    </head>
-
+            <h1>Welcome</h1>
+            </div>
+       
+    </body>
 </html>
-
-
-
-

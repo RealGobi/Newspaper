@@ -7,7 +7,7 @@
     @if (count($lightsabers) > 0)
 
     @foreach($lightsabers as $lightsaber) 
-        <li>{{ $lightsaber->headline }}</li>
+    <li><a href="{!! url('articles/'.$lightsaber->id) !!}">{!! $lightsaber->headline !!}</a></li>
     
     
     @endforeach

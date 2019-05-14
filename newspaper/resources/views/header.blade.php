@@ -13,13 +13,13 @@
     <body>
             <div class="headermenu">
                 <div class="title m-b-md">
-                    Fantasy Sport News
+             <a href="/Newspaper/newspaper/public/"> Fantasy Sport News </a>
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Quidditch</a>
-                    <a href="https://laracasts.com">Lightsaber Fencing</a>
-                    <a href="https://laravel-news.com">Dejarik</a>
+                    <a href="/Newspaper/newspaper/public/quidditch">Quidditch</a>
+                    <a href="/Newspaper/newspaper/public/lightsaber">Lightsaber Fencing</a>
+                    <a href="/Newspaper/newspaper/public/dejarik">Dejarik</a>
                     <a href="/Newspaper/newspaper/public/anboJitsu">Anbo-Jitsu</a>
                     <a href="/Newspaper/newspaper/public/blernsball">Blernsball</a>
                     <a href="/Newspaper/newspaper/public/dragonDressage">Dragon Dressage</a>

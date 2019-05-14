@@ -32,3 +32,6 @@ Route::get('/articles', 'ArticleController@index');
 
 
 Route::get('/secret', 'ArticleController@secret');
+
+
+Route::get('/articles/{id}', 'ArticleController@show');
