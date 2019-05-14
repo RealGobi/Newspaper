@@ -17,6 +17,14 @@ class ArticleController extends Controller
         //
     }
 
+    public function dragon() {
+        $dragon = Article::find('Dragon Dressage');
+
+        return view('dragonDressage', [
+            'dragon' => $dragon
+        ]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
