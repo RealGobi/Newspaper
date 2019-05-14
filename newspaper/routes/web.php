@@ -35,3 +35,6 @@ Route::get('/secret', 'ArticleController@secret');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/articles/{id}', 'ArticleController@show');

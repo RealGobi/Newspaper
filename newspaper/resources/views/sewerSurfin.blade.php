@@ -7,7 +7,7 @@
     @if (count($sewers) > 0)
 
     @foreach($sewers as $sewer) 
-        <li>{{ $sewer->headline }}</li>
+    <li><a href="{!! url('articles/'.$sewer->id) !!}">{!! $sewer->headline !!}</a></li>
     
     
     @endforeach
