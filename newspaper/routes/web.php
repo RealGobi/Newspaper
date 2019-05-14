@@ -16,6 +16,14 @@ Route::get('/', function () {
 });
 
 Route::get('/dragonDressage', 'ArticleController@dragon');
+
+Route::get('/quidditch', 'ArticleController@quidditch');
+
+Route::get('/lightsaber', 'ArticleController@lightsaber');
+
+Route::get('/dejarik', 'ArticleController@dejarik');
+
+
 Route::get('/articles', 'ArticleController@index');
 
 

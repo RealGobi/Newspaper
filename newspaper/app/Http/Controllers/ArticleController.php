@@ -28,6 +28,30 @@ class ArticleController extends Controller
         ]);
     }
 
+    public function quidditch() {
+        $quidditchs = Article::where('category', 'Quidditch')->get();
+
+        return view('quidditch', [
+            'quidditchs' => $quidditchs
+        ]);
+    }
+
+    public function lightsaber() {
+        $lightsabers = Article::where('category', 'Lightsaber fencing')->get();
+
+        return view('lightsaber', [
+            'lightsabers' => $lightsabers
+        ]);
+    }
+
+    public function dejarik() {
+        $dejariks = Article::where('category', 'Dejarik')->get();
+
+        return view('dejarik', [
+            'dejariks' => $dejariks
+        ]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
