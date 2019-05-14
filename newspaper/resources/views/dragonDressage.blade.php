@@ -1,12 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dragon Dressag</title>
-</head>
-<body>
-    <h1>Dragon</h1>
-</body>
-</html>
+@extends('articles')
+@extends('header')
+    
+@section('main')
+<div>
+    <h1>Dragon Dressage</h1>
+    @if (count($dragons) > 0)
+
+    @foreach($dragons as $dragon) 
+        <li>{{ $dragon->headline }}</li>
+    
+    
+    @endforeach
+    @endif
+
+    </div>
+
+@endsection

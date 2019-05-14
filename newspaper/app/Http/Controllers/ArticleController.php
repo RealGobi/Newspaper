@@ -12,16 +12,18 @@ class ArticleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        //
+    public function index() {
+        $articles = Article::all();
+        return view('articleList', [
+            'articles' => $articles
+        ]);
     }
 
     public function dragon() {
-        $dragon = Article::find('Dragon Dressage');
+        $dragons = Article::where('category', 'Dragon Dressage')->get();
 
         return view('dragonDressage', [
-            'dragon' => $dragon
+            'dragons' => $dragons
         ]);
     }
 
@@ -91,3 +93,4 @@ class ArticleController extends Controller
         //
     }
 }
+

@@ -15,4 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-route::get('/dragonDressage', 'ArticleController@dragon');
+Route::get('/dragonDressage', 'ArticleController@dragon');
+Route::get('/articles', 'ArticleController@index');
+
+
