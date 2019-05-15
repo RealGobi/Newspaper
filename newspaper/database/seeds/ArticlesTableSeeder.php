@@ -18,6 +18,7 @@ class ArticlesTableSeeder extends Seeder
             'rank' => rand(1,5),
             'headline' => str_random(10),
             'text' => str_random(800),
+            'img' => str_random(128),
             'free' => rand(0,1)
 
         ]);
