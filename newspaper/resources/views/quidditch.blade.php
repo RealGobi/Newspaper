@@ -10,7 +10,7 @@
     
 
 
-<li><a href="{!! url('articles/'.$quidditch->id) !!}">{!! $quidditch->headline !!}</a></li>
+<li><a href="{!! url('articles/'.$quidditch->id) !!}" class="articlelink">{!! $quidditch->headline !!}</a></li>
       
 
     @endforeach

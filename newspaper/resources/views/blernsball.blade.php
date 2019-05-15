@@ -7,7 +7,7 @@
     @if (count($blernsball) > 0)
 
     @foreach($blernsball as $blernball) 
-    <li><a href="{!! url('articles/'.$blernball->id) !!}">{!! $blernball->headline !!}</a></li>
+    <li><a href="{!! url('articles/'.$blernball->id) !!}" class="articlelink">{!! $blernball->headline !!}</a></li>
     
     
     @endforeach

@@ -158,5 +158,23 @@ h1 {
 
 .linkBack a:hover {
   color: white;
+.articlelink {
+  font-family: 'Times new Roman', cursive;
+  color: #232222;
+  padding: 0 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.articlelink:hover {
+  color: #fffd82;
+}
+
+li {
+  list-style-type: none;
 }
 /*# sourceMappingURL=style.css.map */

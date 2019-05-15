@@ -7,7 +7,7 @@
     @if (count($fots) > 0)
 
     @foreach($fots as $fot) 
-    <li><a href="{!! url('articles/'.$fot->id) !!}">{!! $fot->headline !!}</a></li>
+    <li><a href="{!! url('articles/'.$fot->id) !!}" class="articlelink">{!! $fot->headline !!}</a></li>
     
     
     @endforeach
