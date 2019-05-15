@@ -22,12 +22,12 @@
 
     <div>
     @if (count($firstRankedArticles) > 0)
-
-    @foreach($firstRankedArticles as $article) 
+    <div class="single-article-div">
+         @foreach($firstRankedArticles as $article) 
         <li><a href="{!! url('articles/'.$article->id) !!}" class="articlelink"><div class="front-page-article-headline">{!! $article->headline !!}</div><span class="front-page-article-text">{!! substr($article->text, 0, 200) !!}...</span></a></li>
-    
-
-    @endforeach
+        <span style="width: 100%; height:5rem; overflow:hidden;"><img src="{{ $article->img }}"></span>
+        @endforeach
+    </div>
     @endif
     </div>
             </div>
