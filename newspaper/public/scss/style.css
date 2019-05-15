@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Cinzel+Decorative|MedievalSharp");
 body {
-  background: url("http://i66.tinypic.com/1052yir.jpg");
+  background-image: url("../img/bg.jpg");
   background-size: cover;
   background-color: #d5d5d5;
   color: #0c0c0c;
