@@ -138,6 +138,33 @@ h1 {
 .user {
     padding: 1rem;
     .logout-a {
+    
+    .articlelist {
+      text-align: left;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+
+    }
+    .single-article-div {
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    .three-col {
+      width: 80%;
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+      text-align: left;
+    }
+    
+    .user {
+      padding: 1rem;
+      .logout-a {
         text-decoration: none;
         color: black;
         font-family: "MedievalSharp", cursive;
@@ -192,6 +219,10 @@ li {
         background: #000000;
         color: #fffd82;
         border-radius: 999px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         &:hover {
             color: white;
         }

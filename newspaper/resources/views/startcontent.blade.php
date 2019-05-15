@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-
-    <title>Fantasy Sport News</title>
+        <title>Fantasy Ludis Nuntium</title>
 
     <link href="{{asset('scss/style.css')}}" rel="stylesheet" type="text/css" />
 </head>
@@ -18,10 +17,8 @@
     <section class="content-container">
     <div class="side-add"></div>
     <div class="content">
-
-
-        <h1>Welcome</h1>
-
+          
+            <h1>Top Nuntium</h1>
 
         <div>
             @if (count($firstRankedArticles) > 0)

@@ -9,7 +9,8 @@
 
     @foreach($anboJitsu as $anbo) 
     <li><a href="{!! url('articles/'.$anbo->id) !!}" class="articlelink"><div class="front-page-article-headline">{!! $anbo->headline !!}</div><span class="front-page-article-text">{!! substr($anbo->text, 0, 200) !!}...</span></a></li>
-    
+    <span><img style="" src="{{ $article->img }}"></span>
+
 
     
     @endforeach
