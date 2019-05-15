@@ -7,13 +7,13 @@
 
 
         <title>Fantasy Sport News</title>
+      
         @extends('startcontent')
 
         @extends('header')
 
         
-
-    </head>
+</head>
 
 </html>
 
