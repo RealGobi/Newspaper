@@ -11,7 +11,7 @@
   <p>Category: {{ $article->category }}</p>
 <p> {{ $article->text}} </p>
 
-<li><a href="{{ url()->previous() }}">Tillbaka</a></li>
+<li class="linkBack"><a href="{{ url()->previous() }}">Back</a></li>
 </div> 
 
 

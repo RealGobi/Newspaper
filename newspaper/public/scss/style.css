@@ -139,4 +139,24 @@ h1 {
 .user .logout-a:hover {
   color: #ffeeb7;
 }
+
+.linkBack {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkBack a {
+  text-decoration: none;
+  font-family: 'MedievalSharp', cursive;
+  text-transform: uppercase;
+  padding: .5rem;
+  background: #000000;
+  color: #fffd82;
+  border-radius: 999px;
+}
+
+.linkBack a:hover {
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
