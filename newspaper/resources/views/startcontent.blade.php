@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <section class="front-page-container">
+    <section class="content-container">
     <div class="side-add"></div>
     <div class="content">
 

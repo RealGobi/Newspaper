@@ -3,6 +3,7 @@
     
 @section('main')
 <div>
+    
     <h1>Anbo-Jitsu</h1>
     @if (count($anboJitsu) > 0)
 

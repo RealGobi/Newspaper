@@ -3,7 +3,8 @@
 
 @section('main')
 
-<div class="three-col">   
+<div class="three-col"> 
+
    @if (count($articles) > 0)
    @foreach ($articles as $article)
      <li> {{ $article->headline }}</li>
