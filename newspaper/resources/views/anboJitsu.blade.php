@@ -10,6 +10,7 @@
     <li><a href="{!! url('articles/'.$anbo->id) !!}" class="articlelink">{!! $anbo->headline !!}</a></li>
     
     
+    
     @endforeach
     @endif
 
