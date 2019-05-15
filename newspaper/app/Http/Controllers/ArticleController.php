@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Article;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Input;
 
 class ArticleController extends Controller
 {
@@ -82,6 +83,7 @@ class ArticleController extends Controller
         ]);
     }
 
+
     /**
      * Show the form for creating a new resource.
      *
@@ -121,10 +123,15 @@ class ArticleController extends Controller
      *
      * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
+     *     public function edit(Article $article)
+
      */
-    public function edit(Article $article)
+    public function edit($id)
     {
-        //
+        $article = Article::find($id);
+        return view('editArticle', [
+            'article' => $article
+        ]);
     }
 
     /**
@@ -133,11 +140,24 @@ class ArticleController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
+     * 
+     * public function update(Request $request, Article $article)
      */
-    public function update(Request $request, Article $article)
+
+
+    public function update(Request $request, $id)
     {
-        //
+        $article = Article::find($id);
+        $article->headline = Input::get('headline');
+        $article->category = Input::get('category');
+        $article->save();
+
+        return redirect('articles');
+
     }
+
+
+
 
     /**
      * Remove the specified resource from storage.

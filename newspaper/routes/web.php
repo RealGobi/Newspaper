@@ -36,5 +36,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
 Route::get('/articles/{id}', 'ArticleController@show');
+
+Route::resource('/articles', 'ArticleController');
+
+
+
+
+
