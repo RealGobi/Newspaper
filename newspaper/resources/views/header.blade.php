@@ -44,7 +44,7 @@
             <div class="headermenu">
                 
                 <div class="title m-b-md">
-             <a href="/Newspaper/newspaper/public/"> Fantasy Sport News </a>
+             <a href="/Newspaper/newspaper/public/">Ludis Nuntium</a>
                 </div>
 
                 <div class="links">

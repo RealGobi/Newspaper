@@ -6,8 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
-        <title>Fantasy Sport News</title>
-      
+        <title>Fantasy Ludis Nuntium</title>
         @extends('startcontent')
 
         @extends('header')

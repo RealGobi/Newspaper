@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
-        <title>Fantasy Sport News</title>
+        <title>Fantasy Ludis Nuntium</title>
 
         <link href="{{asset('scss/style.css')}}" rel="stylesheet" type="text/css"/>
                  </head>
@@ -16,7 +16,8 @@
             <div class="content">
 
 
-            <h1>Welcome</h1>
+          
+            <h1>Top Nuntium</h1>
             
 
     <div>
