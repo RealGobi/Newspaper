@@ -23,6 +23,21 @@
         margin: 0 auto;
         width: 50%;
         margin-top: 1rem;
+
+        li {
+            padding: 1rem
+        }
+
+        .front-page-article-headline {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .front-page-article-text {
+            color: #000000b0;
+            text-align: justify;
+        }
+
     }
     
     h1 {
@@ -141,4 +156,14 @@
     
     li {
         list-style-type: none;
+    }
+
+    .login-register-square {
+
+        .container {
+
+            .card {
+                background: rgba(255, 255, 255, 0.384);
+            }
+        } 
     }

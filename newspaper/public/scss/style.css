@@ -24,6 +24,23 @@ body {
   margin-top: 1rem;
 }
 
+.content li,
+.startcontent li {
+  padding: 1rem;
+}
+
+.content .front-page-article-headline,
+.startcontent .front-page-article-headline {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.content .front-page-article-text,
+.startcontent .front-page-article-text {
+  color: #000000b0;
+  text-align: justify;
+}
+
 h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -164,5 +181,9 @@ h1 {
 
 li {
   list-style-type: none;
+}
+
+.login-register-square .container .card {
+  background: rgba(255, 255, 255, 0.384);
 }
 /*# sourceMappingURL=style.css.map */
