@@ -116,8 +116,16 @@
       align-items: center;
       display: flex;
       justify-content: center;
+
+
     }
-    
+    .single-article-div {
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
     .three-col {
       width: 80%;
       -webkit-column-count: 2;
@@ -187,6 +195,9 @@
         background: #000000;
         color: #fffd82;
         border-radius: 999px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         &:hover {
             color: white;

@@ -18,6 +18,7 @@ class CreateArticlesTable extends Migration
             $table->integer('rank');
             $table->string('headline');
             $table->text('text');
+            $table->string('img');
             $table->integer('free');
             $table->string('category');
             $table->timestamps();

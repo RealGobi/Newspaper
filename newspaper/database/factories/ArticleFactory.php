@@ -22,6 +22,7 @@ $factory->define(Article::class, function (Faker $faker) {
         'headline' => $faker->sentence($nbWords = 6, $variableNbWords = true),
         'text' => $faker->paragraph($nbSentences = 9, $variableNbSentences = true),
         'free' => $faker->numberBetween($min = 0, $max = 1),
+        'img' => $faker->imageUrl($width = 400, $height = 280, $category = 'abstract', $randomize = true, $word = null, $gray = false),
         'category' => $faker->randomElement($array = array ('Quidditch', 'Lightsaber fencing', 
         'Dejarik', 'Dragon Dressage', 'Fot-Boule', 'Sewer Surfin', 'Anbo-Jitsu', 'Blernsball'))
     ]; 
