@@ -13,7 +13,7 @@
             </div>
  
             <div class="form-group">
-                {!! Form::label('category', 'Edit category') !!} <br>
+                {!! Form::label('category', 'Edit category:') !!} <br>
                 {!! Form::select('category', array(
                     'Quidditch' => 'Quidditch', 
                     'Lightsaber fencing' => 'Lightsaber fencing',
@@ -28,7 +28,7 @@
 
             <div class="form-group">
                 {!! Form::label('text', 'Edit text:') !!} <br>
-                {!! Form::text('text', $article->text, ['class' => 'text-control']) !!}
+                {!! Form::textarea('text', $article->text, ['class' => 'text-control']) !!}
             </div>
  
  {!! Form::submit('Update article', ['class' => 'btnupdate']) !!}

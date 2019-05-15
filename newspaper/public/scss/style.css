@@ -236,16 +236,17 @@ li {
 .text-control {
   padding: 5px 14px;
   margin: 8px 0;
-  border-radius: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Avenir';
+  line-height: 1.3rem;
 }
 
 .btnupdate {
   background-color: #FE904A;
   color: white;
   padding: 4px 20px;
-  margin: 1rem 5rem;
+  margin: 1rem 1rem;
   border: none;
   border-radius: 7px;
   cursor: pointer;
@@ -260,7 +261,7 @@ li {
   background-color: #FE904A;
   color: white;
   padding: 4px 20px;
-  margin: 8px 0;
+  margin: 18px 0;
   border: none;
   border-radius: 7px;
   cursor: pointer;
@@ -268,6 +269,6 @@ li {
 }
 
 .form-group {
-  margin: 0.3rem;
+  margin: 0.9rem;
 }
 /*# sourceMappingURL=style.css.map */
