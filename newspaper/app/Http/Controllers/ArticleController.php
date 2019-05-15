@@ -21,7 +21,7 @@ class ArticleController extends Controller
     }
 
     public function frontPage() {
-        $articles = Article::whereBetween('rank', [1, 2])->orderBy('rank', 'ASC')->get();
+        $articles = Article::whereBetween('rank', [1, 2, 3])->orderBy('rank', 'ASC')->get();
 
         return view('welcome', [
             'firstRankedArticles' => $articles

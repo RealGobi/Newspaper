@@ -4,7 +4,7 @@ body {
   background-size: cover;
   background-color: #d5d5d5;
   color: #0c0c0c;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 200;
   height: 100vh;
   margin: 0 auto;
@@ -15,8 +15,21 @@ body {
   height: 100vh;
 }
 
-.content,
-.startcontent {
+.front-page-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.front-page-container .side-add {
+  width: 12rem;
+  height: 40rem;
+  background: #0c0c0c;
+  margin-top: 2rem;
+}
+
+.front-page-container .content,
+.front-page-container .startcontent {
   background: rgba(252, 241, 211, 0.5);
   padding: 0.5rem 0rem 4rem 0rem;
   margin: 0 auto;
@@ -24,19 +37,19 @@ body {
   margin-top: 1rem;
 }
 
-.content li,
-.startcontent li {
+.front-page-container .content li,
+.front-page-container .startcontent li {
   padding: 1rem;
 }
 
-.content .front-page-article-headline,
-.startcontent .front-page-article-headline {
+.front-page-container .content .front-page-article-headline,
+.front-page-container .startcontent .front-page-article-headline {
   font-size: 2rem;
   font-weight: 700;
 }
 
-.content .front-page-article-text,
-.startcontent .front-page-article-text {
+.front-page-container .content .front-page-article-text,
+.front-page-container .startcontent .front-page-article-text {
   color: #000000b0;
   text-align: justify;
 }
@@ -51,7 +64,7 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: 'MedievalSharp', cursive;
+  font-family: "MedievalSharp", cursive;
 }
 
 .flex-center {
@@ -90,17 +103,17 @@ h1 {
 }
 
 .links > a {
-  font-family: 'MedievalSharp', cursive;
+  font-family: "MedievalSharp", cursive;
   color: #232222;
   padding: 0 25px;
   font-size: 13px;
   font-weight: 600;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .links > a:hover {
@@ -109,14 +122,14 @@ h1 {
 
 .m-b-md {
   margin-bottom: 30px;
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: "Cinzel Decorative", cursive;
 }
 
 .m-b-md > a {
   text-decoration: none;
   color: #fffdcb;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .m-b-md > a:hover {
@@ -150,13 +163,13 @@ h1 {
 .user .logout-a {
   text-decoration: none;
   color: black;
-  font-family: 'MedievalSharp', cursive;
+  font-family: "MedievalSharp", cursive;
   font-weight: 700;
   padding: 1rem 1.5rem;
   text-transform: uppercase;
   font-size: 13px;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .user .logout-a:hover {
@@ -164,15 +177,15 @@ h1 {
 }
 
 .articlelink {
-  font-family: 'Times new Roman', cursive;
+  font-family: "Times new Roman", cursive;
   color: #232222;
   padding: 0 25px;
   font-size: 1rem;
   font-weight: 500;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   text-decoration: none;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .articlelink:hover {
