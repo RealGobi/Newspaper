@@ -20,11 +20,26 @@
     
     .content,
     .startcontent {
-      background: rgba(252, 241, 211, 0.5);
-      padding: 0.5rem 0rem 4rem 0rem;
-      margin: 0 auto;
-      width: 50%;
-      margin-top: 1rem;
+        background: rgba(252, 241, 211, 0.5);
+        padding: 0.5rem 0rem 4rem 0rem;
+        margin: 0 auto;
+        width: 50%;
+        margin-top: 1rem;
+
+        li {
+            padding: 1rem
+        }
+
+        .front-page-article-headline {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .front-page-article-text {
+            color: #000000b0;
+            text-align: justify;
+        }
+
     }
     
     h1 {
@@ -143,8 +158,19 @@
     }
     
     li {
-      list-style-type: none;
+        list-style-type: none;
     }
+
+    .login-register-square {
+
+        .container {
+
+            .card {
+                background: rgba(255, 255, 255, 0.384);
+            }
+        } 
+    }
+
 
 .linkBack {
     list-style: none;

@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+route::get('/', 'ArticleController@frontPage');
 
 Route::get('/blernsball', 'ArticleController@blernsball');
 Route::get('/anboJitsu', 'ArticleController@anboJitsu');

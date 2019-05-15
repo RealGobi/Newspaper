@@ -20,6 +20,14 @@ class ArticleController extends Controller
         ]);
     }
 
+    public function frontPage() {
+        $articles = Article::whereBetween('rank', [1, 2])->orderBy('rank', 'ASC')->get();
+
+        return view('welcome', [
+            'firstRankedArticles' => $articles
+        ]);
+    }
+
     public function dragon() {
         $dragons = Article::where('category', 'Dragon Dressage')->get();
 
