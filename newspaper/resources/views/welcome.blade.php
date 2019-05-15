@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html lang="eng">
     <head>
@@ -14,10 +12,8 @@
 
         @extends('header')
 
-    </head>
-
-    
-
+        
+</head>
 
 </html>
 

@@ -1,3 +1,5 @@
+@extends('articles')
+
 <!doctype html>
 <html lang="eng">
     <head>
@@ -15,6 +17,18 @@
 
 
             <h1>Welcome</h1>
+            
+
+    <div>
+    @if (count($firstRankedArticles) > 0)
+
+    @foreach($firstRankedArticles as $article) 
+        <li><a href="{!! url('articles/'.$article->id) !!}" class="articlelink"><div class="front-page-article-headline">{!! $article->headline !!}</div><span class="front-page-article-text">{!! substr($article->text, 0, 200) !!}...</span></a></li>
+    
+
+    @endforeach
+    @endif
+    </div>
             </div>
        
     </body>

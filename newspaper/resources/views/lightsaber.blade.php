@@ -7,8 +7,8 @@
     @if (count($lightsabers) > 0)
 
     @foreach($lightsabers as $lightsaber) 
-    <li><a href="{!! url('articles/'.$lightsaber->id) !!}" class="articlelink">{!! $lightsaber->headline !!}</a></li>
-    
+    <li><a href="{!! url('articles/'.$lightsaber->id) !!}" class="articlelink"><div class="front-page-article-headline">{!! $lightsaber->headline !!}</div><span class="front-page-article-text">{!! substr($lightsaber->text, 0, 200) !!}...</span></a></li>
+
     
     @endforeach
     @endif
