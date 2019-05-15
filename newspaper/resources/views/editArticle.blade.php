@@ -6,14 +6,14 @@
 {!! Form::open(['route' => ['articles.update', $article->id], 'method' => 'post']) !!}
 {{ method_field('PATCH')}}
 @csrf
- 
+ <br>
             <div class="form-group">
-                {!! Form::label('headline', 'Edit headline') !!}
+                {!! Form::label('headline', 'Edit headline:') !!} <br>
                 {!! Form::text('headline', $article->headline, ['class' => 'form-control']) !!}
             </div>
  
             <div class="form-group">
-                {!! Form::label('category', 'Edit category') !!}
+                {!! Form::label('category', 'Edit category') !!} <br>
                 {!! Form::select('category', array(
                     'Quidditch' => 'Quidditch', 
                     'Lightsaber fencing' => 'Lightsaber fencing',
@@ -22,11 +22,16 @@
                     'Blernsball' => 'Blernsball',
                     'Dragon Dressage' => 'Dragon Dressage',
                     'Fot-Boule' => 'Fot-Boule',
-                    'Sewer Surfin' => 'Sewer Surfin'), ['class' => 'form-control']) !!}
+                    'Sewer Surfin' => 'Sewer Surfin'), ['class' => 'select']) !!}
                 
             </div>
+
+            <div class="form-group">
+                {!! Form::label('text', 'Edit text:') !!} <br>
+                {!! Form::text('text', $article->text, ['class' => 'text-control']) !!}
+            </div>
  
-            {!! Form::submit('Update article', ['class' => 'btn btn-info']) !!}
-            {!! Form::close() !!}
+ {!! Form::submit('Update article', ['class' => 'btnupdate']) !!}
+            {!! Form::close() !!} 
 
 @endsection
