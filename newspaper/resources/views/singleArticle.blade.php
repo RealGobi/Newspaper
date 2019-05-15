@@ -11,8 +11,18 @@
   <p>Category: {{ $article->category }}</p>
 <p> {{ $article->text}} </p>
 
+<li class="linkBack"><a href="{{ url()->previous() }}">Back</a></li>
+
+{!! Form::open(['route' => ['articles.edit', $article->id], 'method' => 'post']) !!}
+   {{ method_field('GET')}}
+
+<div class="formgroup">
+<input type="submit" class="btnedit" value="Edit article">
+</div>
+{!! Form::close() !!}
 
 </div> 
+
 
 
 @endsection

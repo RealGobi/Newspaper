@@ -48,14 +48,14 @@
                 </div>
 
                 <div class="links">
-                    <a href="/Newspaper/newspaper/public/quidditch">Quidditch</a>
-                    <a href="/Newspaper/newspaper/public/lightsaber">Lightsaber Fencing</a>
-                    <a href="/Newspaper/newspaper/public/dejarik">Dejarik</a>
-                    <a href="/Newspaper/newspaper/public/anboJitsu">Anbo-Jitsu</a>
-                    <a href="/Newspaper/newspaper/public/blernsball">Blernsball</a>
-                    <a href="/Newspaper/newspaper/public/dragonDressage">Dragon Dressage</a>
-                    <a href="/Newspaper/newspaper/public/fotBoule">Fot-Boule</a>
-                    <a href="/Newspaper/newspaper/public/sewerSurfin">Sewer Surfin</a>
+                    <a href="/Newspaper/newspaper/public/quidditch">Quidditch </a>|
+                    <a href="/Newspaper/newspaper/public/lightsaber">Lightsaber Fencing </a>|
+                    <a href="/Newspaper/newspaper/public/dejarik">Dejarik </a>|
+                    <a href="/Newspaper/newspaper/public/anboJitsu">Anbo-Jitsu </a>|
+                    <a href="/Newspaper/newspaper/public/blernsball">Blernsball </a>|
+                    <a href="/Newspaper/newspaper/public/dragonDressage">Dragon Dressage </a>|
+                    <a href="/Newspaper/newspaper/public/fotBoule">Fot-Boule </a>|
+                    <a href="/Newspaper/newspaper/public/sewerSurfin">Sewer Surfin </a>
                 </div>
             </div>
        
