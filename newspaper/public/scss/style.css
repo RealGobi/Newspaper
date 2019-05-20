@@ -24,7 +24,8 @@ body {
 
 .side-add {
   width: 12rem;
-  max-height: 1100px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 2rem;
