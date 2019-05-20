@@ -182,7 +182,7 @@ class ArticleController extends Controller
         if(Gate::allows('superUsers-only', auth()->user())) {
             return view('secret');
         }
-        return view('welcome');
+        return view('secret');
     }
 }
 
