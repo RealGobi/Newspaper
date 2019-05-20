@@ -1,11 +1,11 @@
 @import "variables";
-@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|MedievalSharp');
+@import url("https://fonts.googleapis.com/css?family=Cinzel+Decorative|MedievalSharp");
 body {
-    background-image: url('../img/bg.jpg');
+    background-image: url("../img/bg.jpg");
     background-size: cover;
     background-color: rgb(213, 213, 213);
     color: #0c0c0c;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 200;
     height: 100vh;
     margin: 0 auto;
@@ -17,6 +17,17 @@ body {
     height: 100vh;
 }
 
+.content-container {
+    display: flex;
+}
+
+.side-add {
+    width: 12rem;
+    height: 40rem;
+    background: #0c0c0c;
+    margin-top: 2rem;
+}
+
 .content,
 .startcontent {
     background: rgba(252, 241, 211, 0.5);
@@ -24,25 +35,28 @@ body {
     margin: 0 auto;
     width: 50%;
     margin-top: 1rem;
+
     li {
-        padding: 1rem
-    }
-    .front-page-article-headline {
-        font-size: 2rem;
-        font-weight: 700;
-        text-align: left;
-    }
-    .front-page-article-text {
-        text-align: left;
-        color: #000000b0;
+        padding: 1rem;
     }
 }
+
 
 h1 {
     align-items: center;
     display: flex;
     justify-content: center;
-    font-family: 'MedievalSharp', cursive;
+    font-family: "MedievalSharp", cursive;
+}
+
+.front-page-article-headline {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: left;
+}
+.front-page-article-text {
+    color: #000000b0;
+    text-align: left;
 }
 
 .flex-center {
@@ -73,35 +87,35 @@ h1 {
     }
 }
 
-.links>a {
-    font-family: 'MedievalSharp', cursive;
+.links > a {
+    font-family: "MedievalSharp", cursive;
     color: #232222;
     padding: 0px 5px;
     font-size: 16px;
     font-weight: 600;
-    letter-spacing: .0rem;
+    letter-spacing: 0rem;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
     //transition: .4s;
 }
 
-.links>a:hover {
+.links > a:hover {
     color: #ffeeb7;
 }
 
 .m-b-md {
     margin-bottom: 30px;
-    font-family: 'Cinzel Decorative', cursive;
+    font-family: "Cinzel Decorative", cursive;
 }
 
-.m-b-md>a {
+.m-b-md > a {
     text-decoration: none;
     color: #fffdcb;
     //transition: .4s;
 }
 
-.m-b-md>a:hover {
+.m-b-md > a:hover {
     color: #fffd82;
 }
 
@@ -153,7 +167,7 @@ h1 {
       .logout-a {
         text-decoration: none;
         color: black;
-        font-family: 'MedievalSharp', cursive;
+        font-family: "MedievalSharp", cursive;
         font-weight: 700;
         padding: 1rem 1.5rem;
         text-transform: uppercase;
@@ -166,12 +180,12 @@ h1 {
 }
 
 .articlelink {
-    font-family: 'Times new Roman', cursive;
+    font-family: "Times new Roman", cursive;
     color: #232222;
     padding: 0 25px;
     font-size: 1rem;
     font-weight: 500;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     text-decoration: none;
     //transition: .4s;
 }
@@ -179,6 +193,7 @@ h1 {
 .articlelink:hover {
     color: #fffd82;
 }
+
 
 li {
     list-style-type: none;
@@ -198,9 +213,9 @@ li {
     margin: 0;
     a {
         text-decoration: none;
-        font-family: 'MedievalSharp', cursive;
+        font-family: "MedievalSharp", cursive;
         text-transform: uppercase;
-        padding: .5rem;
+        padding: 0.5rem;
         background: #000000;
         color: #fffd82;
         border-radius: 999px;
@@ -223,7 +238,7 @@ li {
     display: inline-block;
     cursor: pointer;
     color: #090909;
-    font-family: 'MedievalSharp', cursive;
+    font-family: "MedievalSharp", cursive;
     font-size: 20px;
     padding: 10px 20px;
     text-decoration: none;
@@ -244,7 +259,7 @@ li {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 0.9rem;
-    color: #E46A10;
+    color: #e46a10;
 }
 
 .text-control {
@@ -255,7 +270,7 @@ li {
 }
 
 .btnupdate {
-    background-color: #FE904A;
+    background-color: #fe904a;
     color: white;
     padding: 4px 20px;
     margin: 1rem 5rem;
@@ -266,11 +281,11 @@ li {
 }
 
 .btnupdate:hover {
-    background-color: #9DFEA8;
+    background-color: #9dfea8;
 }
 
 .select {
-    background-color: #FE904A;
+    background-color: #fe904a;
     color: white;
     padding: 4px 20px;
     margin: 8px 0;
@@ -283,4 +298,3 @@ li {
 .form-group {
     margin: 0.3rem;
 }
-    
