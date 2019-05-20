@@ -1,12 +1,12 @@
 
 <?php 
-$numL = mt_rand(1, 4); 
-$numR = mt_rand(1, 4);
+$numL = mt_rand(1, 5); 
+$numR = mt_rand(1, 5);
 ?>
 
 <div class="content-container">
     @cannot('user')
-    <img class="side-add" src="../../public/img/{{$numL}}.png">
+    <img class="side-add" src="{{URL::to('/')}}/img/{{$numL}}.png">
     @endcannot
     <div class="content">
 
@@ -19,7 +19,7 @@ $numR = mt_rand(1, 4);
         </div>
     </div>
     @cannot('user')
-    <img class="side-add" src="../../public/img/{{$numR}}.png">
+    <img class="side-add" src="{{URL::to('/')}}/img/{{$numR}}.png">
     @endcannot
 
 </div>

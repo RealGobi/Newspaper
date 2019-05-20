@@ -1,8 +1,8 @@
 @extends('articles')
 
 <?php 
-$numberL = mt_rand(1, 4); 
-$numberR = mt_rand(1, 4);
+$numberL = mt_rand(1, 5); 
+$numberR = mt_rand(1, 5);
 ?>
 
 <!doctype html>
