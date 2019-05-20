@@ -1,5 +1,7 @@
 <div class="content-container">
+    @cannot('user')
     <div class="side-add"></div>
+    @endcannot
     <div class="content">
 
 
@@ -10,6 +12,8 @@
 
         </div>
     </div>
+    @cannot('user')
     <div class="side-add"></div>
+    @endcannot
 
 </div>

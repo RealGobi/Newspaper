@@ -179,10 +179,19 @@ class ArticleController extends Controller
     }
 
     public function secret() {
+        $articles = Article::whereBetween('rank', [1, 2, 3])->orderBy('rank', 'ASC')->get();
+
         if(Gate::allows('superUsers-only', auth()->user())) {
             return view('secret');
+        } else if(Gate::allows('user', auth()->user())) {
+            return view('welcome', [
+                'firstRankedArticles' => $articles
+            ]);
         }
-        return view('secret');
+
+        return view('welcome', [
+            'firstRankedArticles' => $articles
+        ]);
     }
 }
 
