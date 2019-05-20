@@ -1,5 +1,10 @@
 @extends('articles')
 
+<?php 
+$numberL = mt_rand(1, 4); 
+$numberR = mt_rand(1, 4);
+?>
+
 <!doctype html>
 <html lang="eng">
 
@@ -16,7 +21,7 @@
 <body>
     <section class="content-container">
         @cannot('user')
-        <div class="side-add"></div>
+        <img class="side-add" src="../public/img/{{$numberL}}.png">
         @endcannot
         <div class="content">
 
@@ -37,7 +42,7 @@
             </div>
         </div>
         @cannot('user')
-        <div class="side-add"></div>
+        <img class="side-add" src="../public/img/{{$numberR}}.png">
         @endcannot
     </section>
 </body>

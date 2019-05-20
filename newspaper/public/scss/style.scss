@@ -23,8 +23,10 @@ body {
 
 .side-add {
     width: 12rem;
-    height: 40rem;
-    background: #0c0c0c;
+    height: auto;
+    max-height: 1100px;
+    background-repeat: no-repeat;
+    background-size: contain;
     margin-top: 2rem;
 }
 
