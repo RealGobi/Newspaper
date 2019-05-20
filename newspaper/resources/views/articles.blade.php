@@ -1,6 +1,12 @@
+
+<?php 
+$numL = mt_rand(1, 5); 
+$numR = mt_rand(1, 5);
+?>
+
 <div class="content-container">
     @cannot('user')
-    <div class="side-add"></div>
+    <img class="side-add" src="{{URL::to('/')}}/img/{{$numL}}.png">
     @endcannot
     <div class="content">
 
@@ -13,7 +19,7 @@
         </div>
     </div>
     @cannot('user')
-    <div class="side-add"></div>
+    <img class="side-add" src="{{URL::to('/')}}/img/{{$numR}}.png">
     @endcannot
 
 </div>
