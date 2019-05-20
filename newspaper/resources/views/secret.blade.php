@@ -6,7 +6,7 @@
 
 <div class="articlelist">
 
-@yield('main')
+<h1>Secret</h1>
 
 </div>
 </div>

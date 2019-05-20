@@ -1,8 +1,9 @@
 @extends('articles')
 @extends('header')
-    
+
 @section('main')
 <div>
+
     <h1>Anbo-Jitsu</h1>
     @if (count($anboJitsu) > 0)
 <div class="single-article-div">
@@ -15,6 +16,6 @@
 </div>
 @endif
 
-    </div>
+</div>
 
 @endsection

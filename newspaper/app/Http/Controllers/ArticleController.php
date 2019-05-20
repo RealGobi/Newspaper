@@ -22,7 +22,7 @@ class ArticleController extends Controller
     }
 
     public function frontPage() {
-        $articles = Article::whereBetween('rank', [1, 2])->orderBy('rank', 'ASC')->get();
+        $articles = Article::whereBetween('rank', [1, 2, 3])->orderBy('rank', 'ASC')->get();
 
         return view('welcome', [
             'firstRankedArticles' => $articles
@@ -178,10 +178,19 @@ class ArticleController extends Controller
     }
 
     public function secret() {
+        $articles = Article::whereBetween('rank', [1, 2, 3])->orderBy('rank', 'ASC')->get();
+
         if(Gate::allows('superUsers-only', auth()->user())) {
             return view('secret');
+        } else if(Gate::allows('user', auth()->user())) {
+            return view('welcome', [
+                'firstRankedArticles' => $articles
+            ]);
         }
-        return view('welcome');
+
+        return view('welcome', [
+            'firstRankedArticles' => $articles
+        ]);
     }
 }
 
