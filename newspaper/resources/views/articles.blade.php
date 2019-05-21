@@ -10,12 +10,16 @@ $numR = mt_rand(1, 5);
     @endcannot
     <div class="content">
 
+    @cannot('user')
+    <img class="top-add" src="{{URL::to('/')}}/img/top-add.png">
+    @endcannot
 
 
         <div class="articlelist">
 
             @yield('main')
 
+            
         </div>
     </div>
     @cannot('user')
