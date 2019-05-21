@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Fantasy Sport News</title>
+        <title>Ludis Nuntium</title>
 
         <link href="{{asset('scss/style.css')}}" rel="stylesheet" type="text/css"/>
                  </head>
@@ -44,7 +44,7 @@
             <div class="headermenu">
                 
                 <div class="title m-b-md">
-             <a href="/Newspaper/newspaper/public/">Ludis Nuntium</a>
+             <a style="text-decoration: none;" href="/Newspaper/newspaper/public/">Ludis Nuntium</a>
                 </div>
 
                 <div class="links">
