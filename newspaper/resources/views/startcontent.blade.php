@@ -27,6 +27,9 @@ $numberR = mt_rand(1, 5);
 
             <h1>Top Nuntium</h1>
 
+            @cannot('user')
+          <img class="top-add" src="{{URL::to('/')}}/img/top-add.png">
+            @endcannot
 
             <div>
                 @if (count($firstRankedArticles) > 0)
