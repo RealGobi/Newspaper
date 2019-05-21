@@ -37,7 +37,7 @@
 
   @else
   <h1>You shall not pass!</h1>
-  <img src="../../public/img/gandalf.jpg">
+  <img class="img-gandalf" src="../../public/img/gandalf.jpg">
   <h2 style="text-align: center; font-family: 'MedievalSharp', cursive">Please <a href="../register">register</a>/<a href="../login">login</a> to read this article</h2>
   <li class="linkBack"><a href="{{ url()->previous() }}">Back</a></li>
   @endif
