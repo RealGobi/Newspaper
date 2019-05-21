@@ -80,6 +80,10 @@ h1 {
   color: black;
 }
 
+.front-page-article-headline:hover {
+  color: #f4f7cb;
+}
+
 .front-page-article-text {
   color: #000000b0;
   text-align: left;

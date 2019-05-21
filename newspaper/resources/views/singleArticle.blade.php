@@ -25,7 +25,6 @@
   {!! Form::close() !!}
   @elseif($article->rank >= 3)
 
-  <img class="top-add" src="{{URL::to('/')}}/img/top-add.png">
 
   <p>Category: {{ $article->category }}</p>
   <p> {{ $article->text}} </p>
