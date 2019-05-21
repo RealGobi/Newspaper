@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
-        <title>Fantasy Ludis Nuntium</title>
+        <title>Ludis Nuntium</title>
         @extends('startcontent')
 
         @extends('header')
