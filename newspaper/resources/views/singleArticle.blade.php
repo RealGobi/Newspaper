@@ -27,8 +27,13 @@
   <p>Category: {{ $article->category }}</p>
   <p> {{ $article->text}} </p>
   <span><img src="{{ $article->img }}"></span>
-
+  
   <li class="linkBack"><a href="{{ url()->previous() }}">Back</a></li>
+  @can('superUsers-only')
+  <div class="formgroup">
+    <input type="submit" class="btnedit" value="Edit article">
+  </div>
+  @endcan
 
   @else
   <h1>You shall not pass!</h1>
