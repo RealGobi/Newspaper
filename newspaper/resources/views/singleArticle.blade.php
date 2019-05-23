@@ -24,8 +24,7 @@
 
   @endcan
   {!! Form::close() !!}
-
-
+  <!-- Delete -->
   {!! Form::open(['route' => ['articles.destroy', $article->id], 'method' => 'post']) !!}
                   @csrf
                   @method('DELETE')

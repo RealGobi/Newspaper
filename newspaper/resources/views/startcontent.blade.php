@@ -24,6 +24,11 @@ $numberR = mt_rand(1, 5);
         <img class="side-add" src="../public/img/{{$numberL}}.png">
         @endcannot
         <div class="content">
+        @if(session()->get('success'))
+    <div class="alert alert-success">
+      {{ session()->get('success') }}  
+    </div><br />
+  @endif
 
             <h1>Top Nuntium</h1>
 
