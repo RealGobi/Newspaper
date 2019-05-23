@@ -21,7 +21,16 @@
   <div class="formgroup">
     <input type="submit" class="btnedit" value="Edit article">
   </div>
+
   @endcan
+  {!! Form::close() !!}
+
+
+  {!! Form::open(['route' => ['articles.destroy', $article->id], 'method' => 'post']) !!}
+                  @csrf
+                  @method('DELETE')
+                  <button class="btn btn-danger" type="submit">Delete</button>
+                </form>
   {!! Form::close() !!}
   @elseif($article->rank >= 3)
 

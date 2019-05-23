@@ -172,10 +172,18 @@ class ArticleController extends Controller
      * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Article $article)
+   
+        public function destroy($id)
     {
-        //
+        $articles = Article::whereBetween('rank', [1, 2, 3])->orderBy('rank', 'ASC')->get();
+
+        $article = Article::find($id);
+        $article->delete();
+        return view('welcome', [
+            'firstRankedArticles' => $articles
+        ]);
     }
+    
 
     public function secret() {
         $articles = Article::whereBetween('rank', [1, 2, 3])->orderBy('rank', 'ASC')->get();
