@@ -3,6 +3,8 @@
 <?php 
 $numberL = mt_rand(1, 5); 
 $numberR = mt_rand(1, 5);
+$topAdd = mt_rand(1, 2);
+
 ?>
 
 <!doctype html>
@@ -33,7 +35,7 @@ $numberR = mt_rand(1, 5);
             <h1>Top Nuntium</h1>
 
             @cannot('user')
-          <img class="top-add" src="{{URL::to('/')}}/img/top-add.png">
+            <img class="top-add" src="{{URL::to('/')}}/img/top-add{{$topAdd}}.png">
             @endcannot
 
             <div>

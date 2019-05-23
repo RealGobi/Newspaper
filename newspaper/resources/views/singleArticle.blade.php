@@ -41,6 +41,12 @@
   <div class="formgroup">
     <input type="submit" class="btnedit" value="Edit article">
   </div>
+    <!-- Delete -->
+    {!! Form::open(['route' => ['articles.destroy', $article->id], 'method' => 'post']) !!}
+      @csrf
+      @method('DELETE')
+      <button class="delete" type="submit">Delete</button>
+  {!! Form::close() !!}
   @endcan
 
   @else
