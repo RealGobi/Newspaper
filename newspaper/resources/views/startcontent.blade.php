@@ -25,10 +25,10 @@ $numberR = mt_rand(1, 5);
         @endcannot
         <div class="content">
         @if(session()->get('success'))
-    <div class="alert alert-success">
-      {{ session()->get('success') }}  
-    </div><br />
-  @endif
+        <div>
+          {{ session()->get('success') }}  
+        </div>
+        @endif
 
             <h1>Top Nuntium</h1>
 

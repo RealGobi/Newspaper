@@ -26,10 +26,9 @@
   {!! Form::close() !!}
   <!-- Delete -->
   {!! Form::open(['route' => ['articles.destroy', $article->id], 'method' => 'post']) !!}
-                  @csrf
-                  @method('DELETE')
-                  <button class="btn btn-danger" type="submit">Delete</button>
-                </form>
+      @csrf
+      @method('DELETE')
+      <button class="delete" type="submit">Delete</button>
   {!! Form::close() !!}
   @elseif($article->rank >= 3)
 
