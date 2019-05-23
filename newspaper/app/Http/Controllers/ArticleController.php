@@ -179,9 +179,8 @@ class ArticleController extends Controller
 
         $article = Article::find($id);
         $article->delete();
-        return view('welcome', [
-            'firstRankedArticles' => $articles
-        ]);
+        return redirect('')->with('success', 'Article has been deleted successfully!');
+
     }
     
 
