@@ -15,7 +15,7 @@ $topAdd = mt_rand(1, 2);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Fantasy Ludis Nuntium</title>
+    <title>Ludis Nuntium</title>
 
     <link href="{{asset('scss/style.css')}}" rel="stylesheet" type="text/css" />
 </head>

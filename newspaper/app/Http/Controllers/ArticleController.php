@@ -99,7 +99,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        //
+        return redirect('')->with('success', 'Article has been deleted successfully!');
     }
 
     /**
@@ -159,7 +159,7 @@ class ArticleController extends Controller
         $article->category = Input::get('category');
         $article->save();
 
-        return redirect('articles');
+        return redirect('')->with('success', 'Article has been updated successfully!');
 
     }
 
@@ -175,12 +175,9 @@ class ArticleController extends Controller
    
         public function destroy($id)
     {
-        $articles = Article::whereBetween('rank', [1, 2, 3])->orderBy('rank', 'ASC')->get();
-
         $article = Article::find($id);
         $article->delete();
         return redirect('')->with('success', 'Article has been deleted successfully!');
-
     }
     
 
