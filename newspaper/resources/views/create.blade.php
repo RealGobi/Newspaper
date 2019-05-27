@@ -13,7 +13,7 @@
 
             <div class="form-group">
                 {!! Form::label('img', 'Image Url:') !!} <br>
-                {!! Form::text('img', null, ['class' => 'form-control']) !!}
+                {!! Form::text('img', 'https://lorempixel.com/400/280/abstract/?58572', ['class' => 'form-control']) !!}
             </div>
 
 
