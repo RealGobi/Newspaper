@@ -21,10 +21,15 @@
 
                                 <div class="logout">
                                     <a class="logout-a" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
+                                    onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
+                                    <a class="logout-a" href="/Newspaper/newspaper/public/create">
+                
+                                    Add article
+                                    </a>
+                                    
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
