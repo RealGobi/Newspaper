@@ -99,7 +99,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        return redirect('')->with('success', 'Article has been deleted successfully!');
+
     }
 
     /**
