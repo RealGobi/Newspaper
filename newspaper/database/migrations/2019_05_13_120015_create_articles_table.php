@@ -1,9 +1,7 @@
 <?php
-
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-
 class CreateArticlesTable extends Migration
 {
     /**
@@ -22,11 +20,9 @@ class CreateArticlesTable extends Migration
             $table->integer('free');
             $table->string('category');
             $table->timestamps();
-
     
         });
     }
-
     /**
      * Reverse the migrations.
      *

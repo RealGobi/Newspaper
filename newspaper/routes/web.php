@@ -44,6 +44,9 @@ Route::get('/create', 'ArticleController@create');
 
 Route::resource('/articles', 'ArticleController');
 
+Route::get('/create', 'ArticleController@create');
+
+
 
 
 

@@ -38,9 +38,12 @@
   
   <li class="linkBack"><a href="{{ url()->previous() }}">Back</a></li>
   @can('superUsers-only')
+  {!! Form::open(['route' => ['articles.edit', $article->id], 'method' => 'post']) !!}
+  {{ method_field('GET')}}
   <div class="formgroup">
     <input type="submit" class="btnedit" value="Edit article">
   </div>
+  {!! Form::close() !!}
     <!-- Delete -->
     {!! Form::open(['route' => ['articles.destroy', $article->id], 'method' => 'post']) !!}
       @csrf

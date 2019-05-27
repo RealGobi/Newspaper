@@ -27,7 +27,7 @@ $topAdd = mt_rand(1, 2);
         @endcannot
         <div class="content">
         @if(session()->get('success'))
-        <div>
+        <div class="feedback">
           {{ session()->get('success') }}  
         </div>
         @endif
