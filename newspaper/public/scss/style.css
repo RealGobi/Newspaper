@@ -22,6 +22,13 @@ body {
   display: flex;
 }
 
+.content-container .feedback {
+  color: black;
+  background: rgba(255, 255, 255, 0.356);
+  padding: 1rem;
+  text-align: center;
+}
+
 .side-add {
   width: 12rem;
   -ms-flex-item-align: start;
@@ -331,6 +338,7 @@ li {
 .btnedit {
   background-color: #fbff8c;
   border-radius: 28px;
+  border: none;
   display: inline-block;
   cursor: pointer;
   color: #090909;
