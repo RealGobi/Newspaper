@@ -6,6 +6,7 @@ use App\Article;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Validator;
 
 class ArticleController extends Controller
 {
@@ -99,9 +100,9 @@ class ArticleController extends Controller
      */
     public function create()
     {
+        return view('create');
 
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -110,7 +111,26 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $validator = Validator::make($request->all(), [
+            'headline' => 'required',
+            'category' => 'required',
+            'text' => 'required'
+        ]);
+
+        if ($validator->fails()) {
+            return redirect('create')
+            ->withErrors($validator)
+            ->withInput();
+        }
+
+
+        Article::create($request->all());
+        $articles = Article::all();
+    
+
+        return redirect('')->with('success', 'Article has been created successfully!');
+
     }
 
     /**
