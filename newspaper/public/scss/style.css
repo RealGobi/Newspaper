@@ -71,6 +71,7 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: "MedievalSharp", cursive;
+  margin-bottom: 0;
 }
 
 .front-page-article-headline {
@@ -78,6 +79,10 @@ h1 {
   font-weight: 700;
   text-align: left;
   color: black;
+}
+
+.front-page-article-headline:hover {
+  color: #ffeeb7;
 }
 
 .front-page-article-headline:hover {
@@ -192,6 +197,40 @@ h1 {
           justify-content: center;
 }
 
+.single-article-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.single-article-div .delete {
+  background-color: #ff5e5e;
+  border-radius: 28px;
+  cursor: pointer;
+  color: #090909;
+  font-family: "MedievalSharp", cursive;
+  font-size: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #f6fff5;
+  margin: auto;
+}
+
+.single-article-div .delete:hover {
+  color: #e4e4e4;
+  background-color: #f84d4d;
+}
+
 .single-article-div span {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -296,7 +335,6 @@ li {
 .btnedit {
   background-color: #fbff8c;
   border-radius: 28px;
-  border: 1px solid #f5ed5a;
   display: inline-block;
   cursor: pointer;
   color: #090909;
@@ -309,7 +347,8 @@ li {
 }
 
 .btnedit:hover {
-  background-color: #ffd97a;
+  color: #797979;
+  background-color: #f5fa67;
 }
 
 .form-control,

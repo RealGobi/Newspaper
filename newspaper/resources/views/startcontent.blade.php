@@ -3,6 +3,8 @@
 <?php 
 $numberL = mt_rand(1, 5); 
 $numberR = mt_rand(1, 5);
+$topAdd = mt_rand(1, 2);
+
 ?>
 
 <!doctype html>
@@ -13,7 +15,7 @@ $numberR = mt_rand(1, 5);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Fantasy Ludis Nuntium</title>
+    <title>Ludis Nuntium</title>
 
     <link href="{{asset('scss/style.css')}}" rel="stylesheet" type="text/css" />
 </head>
@@ -24,11 +26,16 @@ $numberR = mt_rand(1, 5);
         <img class="side-add" src="../public/img/{{$numberL}}.png">
         @endcannot
         <div class="content">
+        @if(session()->get('success'))
+        <div>
+          {{ session()->get('success') }}  
+        </div>
+        @endif
 
             <h1>Top Nuntium</h1>
 
             @cannot('user')
-          <img class="top-add" src="{{URL::to('/')}}/img/top-add.png">
+            <img class="top-add" src="{{URL::to('/')}}/img/top-add{{$topAdd}}.png">
             @endcannot
 
             <div>

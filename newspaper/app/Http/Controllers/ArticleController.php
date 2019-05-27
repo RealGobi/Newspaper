@@ -99,7 +99,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -159,7 +159,7 @@ class ArticleController extends Controller
         $article->category = Input::get('category');
         $article->save();
 
-        return redirect('articles');
+        return redirect('')->with('success', 'Article has been updated successfully!');
 
     }
 
@@ -172,10 +172,14 @@ class ArticleController extends Controller
      * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Article $article)
+   
+        public function destroy($id)
     {
-        //
+        $article = Article::find($id);
+        $article->delete();
+        return redirect('')->with('success', 'Article has been deleted successfully!');
     }
+    
 
     public function secret() {
         $articles = Article::whereBetween('rank', [1, 2, 3])->orderBy('rank', 'ASC')->get();
