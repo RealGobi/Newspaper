@@ -30,8 +30,22 @@
                 {!! Form::label('text', 'Edit text:') !!} <br>
                 {!! Form::textarea('text', $article->text, ['class' => 'text-control']) !!}
             </div>
+
+            <div class="form-group">
+                {!! Form::label('rank', 'Edit rank:') !!} <br>
+                {!! Form::select('rank', array(
+                    'Quidditch' => 'Quidditch', 
+                    'Lightsaber fencing' => 'Lightsaber fencing',
+                    'Dejarik' => 'Dejarik',
+                    'Anbo-Jitsu' => 'Anbo-Jitsu',
+                    'Blernsball' => 'Blernsball',
+                    'Dragon Dressage' => 'Dragon Dressage',
+                    'Fot-Boule' => 'Fot-Boule',
+                    'Sewer Surfin' => 'Sewer Surfin'), ['class' => 'select']) !!}
+                
+            </div>
  
- {!! Form::submit('Update article', ['class' => 'btnupdate']) !!}
+ {!! Form::submit('Create', ['class' => 'btnupdate']) !!}
             {!! Form::close() !!} 
 
 @endsection

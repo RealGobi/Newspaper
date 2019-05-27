@@ -99,7 +99,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-
+        return view('create');
     }
 
     /**
@@ -110,7 +110,15 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $article = Article::create([
+            'name' => $request->headline,
+            'text' => $request->text,
+            'img' => $request->img,
+            'category' => $request->category,
+            'free' => $request->free,
+            'rank' => $request->rank
+        ]);
+        return redirect('')->with('success', 'Article has been created successfully!');
     }
 
     /**
@@ -162,9 +170,6 @@ class ArticleController extends Controller
         return redirect('')->with('success', 'Article has been updated successfully!');
 
     }
-
-
-
 
     /**
      * Remove the specified resource from storage.

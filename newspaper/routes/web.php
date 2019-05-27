@@ -40,6 +40,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/articles/{id}', 'ArticleController@show');
 
+Route::get('/create', 'ArticleController@create');
+
 Route::resource('/articles', 'ArticleController');
 
 

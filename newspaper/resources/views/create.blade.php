@@ -3,13 +3,11 @@
 
 @section('main')
 
-{!! Form::open(['route' => ['articles.update', $article->id], 'method' => 'post']) !!}
-{{ method_field('PATCH')}}
-@csrf
+{!! Form::open(['url' => ['articles'], 'method' => 'post']) !!}
  <br>
             <div class="form-group">
                 {!! Form::label('headline', 'Edit headline:') !!} <br>
-                {!! Form::text('headline', $article->headline, ['class' => 'form-control']) !!}
+                {!! Form::text('headline', null, ['class' => 'form-control']) !!}
             </div>
  
             <div class="form-group">
@@ -28,7 +26,7 @@
 
             <div class="form-group">
                 {!! Form::label('text', 'Edit text:') !!} <br>
-                {!! Form::textarea('text', $article->text, ['class' => 'text-control']) !!}
+                {!! Form::textarea('text', null, ['class' => 'text-control']) !!}
             </div>
  
  {!! Form::submit('Update article', ['class' => 'btnupdate']) !!}
