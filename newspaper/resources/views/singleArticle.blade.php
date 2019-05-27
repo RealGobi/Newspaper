@@ -22,14 +22,14 @@
     <input type="submit" class="btnedit" value="Edit article">
   </div>
 
-  @endcan
   {!! Form::close() !!}
   <!-- Delete -->
   {!! Form::open(['route' => ['articles.destroy', $article->id], 'method' => 'post']) !!}
-      @csrf
-      @method('DELETE')
-      <button class="delete" type="submit">Delete</button>
+  @csrf
+  @method('DELETE')
+  <button class="delete" type="submit">Delete</button>
   {!! Form::close() !!}
+  @endcan
   @elseif($article->rank >= 3)
 
   <p>Category: {{ $article->category }}</p>
