@@ -19,6 +19,13 @@ body {
 
 .content-container {
     display: flex;
+
+    .feedback{
+        color: black;
+        background: rgba(255, 255, 255, 0.356);
+        padding:1rem;
+        text-align: center;
+    }
 }
 
 .side-add {
@@ -282,7 +289,7 @@ li {
     -moz-border-radius: 28px;
     -webkit-border-radius: 28px;
     border-radius: 28px;
-    // border: 1px solid #f5ed5a;
+    border:none;
     display: inline-block;
     cursor: pointer;
     color: #090909;
@@ -292,6 +299,7 @@ li {
     text-decoration: none;
     text-shadow: 0px 0px 0px #f6fff5;
     margin: auto;
+
 }
 
 .btnedit:hover {
