@@ -38,9 +38,7 @@
                         @endif
                     @endauth
                 </div>
-            @endif
-            @endauth
-        </div>
+ 
         @endif
 
         <div class="headermenu">
