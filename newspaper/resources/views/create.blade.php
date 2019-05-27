@@ -8,7 +8,7 @@
  <br>
             <div class="form-group">
                 {!! Form::label('headline', 'Headline:') !!} <br>
-                {!! Form::text('headline', null, ['class' => 'form-control']) !!}
+                {!! Form::text('headline', 'Headline', ['class' => 'form-control']) !!}
             </div>
 
             <div class="form-group">
@@ -53,7 +53,7 @@
 
             <div class="form-group">
                 {!! Form::label('text', 'Text:') !!} <br>
-                {!! Form::textarea('text', null, ['class' => 'text-control']) !!}
+                {!! Form::textarea('text', 'Article text', ['class' => 'text-control']) !!}
             </div>
  
  {!! Form::submit('Create article', ['class' => 'btnupdate']) !!}
