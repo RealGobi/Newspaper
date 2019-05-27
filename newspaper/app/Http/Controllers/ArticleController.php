@@ -101,7 +101,6 @@ class ArticleController extends Controller
     public function create()
     {
         return view('create');
-
     }
     /**
      * Store a newly created resource in storage.
@@ -111,26 +110,20 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-
         $validator = Validator::make($request->all(), [
             'headline' => 'required',
             'category' => 'required',
             'text' => 'required'
         ]);
-
         if ($validator->fails()) {
             return redirect('create')
             ->withErrors($validator)
             ->withInput();
         }
-
-
         Article::create($request->all());
         $articles = Article::all();
     
-
         return redirect('')->with('success', 'Article has been created successfully!');
-
     }
 
     /**
@@ -182,9 +175,6 @@ class ArticleController extends Controller
         return redirect('')->with('success', 'Article has been updated successfully!');
 
     }
-
-
-
 
     /**
      * Remove the specified resource from storage.
