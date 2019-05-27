@@ -11,7 +11,19 @@
                 {!! Form::label('headline', 'Edit headline:') !!} <br>
                 {!! Form::text('headline', $article->headline, ['class' => 'form-control']) !!}
             </div>
- 
+
+            <div class="form-group">
+                {!! Form::label('img', 'Edit Image Url:') !!} <br>
+                {!! Form::text('img', $article->img, ['class' => 'form-control']) !!}
+            </div>
+
+            <div class="form-group">
+                {!! Form::label('free', 'Edit Free article:') !!} <br>
+                {!! Form::select('free', array(
+                    '0' => 'Yes',
+                    '1' => 'No'),  ['class' => 'select']) !!}
+            </div>
+
             <div class="form-group">
                 {!! Form::label('category', 'Edit category:') !!} <br>
                 {!! Form::select('category', array(
