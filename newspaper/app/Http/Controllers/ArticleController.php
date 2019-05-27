@@ -23,7 +23,7 @@ class ArticleController extends Controller
     }
 
     public function frontPage() {
-        $articles = Article::whereBetween('rank', [1, 2, 3])->orderBy('rank', 'ASC')->get();
+        $articles = Article::whereBetween('rank', [1, 2, 3])->orderBy('created_at', 'DESC')->get();
 
         return view('welcome', [
             'firstRankedArticles' => $articles
@@ -31,21 +31,21 @@ class ArticleController extends Controller
     }
 
     public function dragon() {
-        $dragons = Article::where('category', 'Dragon Dressage')->get();
+        $dragons = Article::where('category', 'Dragon Dressage')->orderBy('created_at', 'DESC')->get();
 
         return view('dragonDressage', [
             'dragons' => $dragons
         ]);
     }
     public function anboJitsu() {
-        $anboJitsu = Article::where('category', 'Anbo-Jitsu')->get();
+        $anboJitsu = Article::where('category', 'Anbo-Jitsu')->orderBy('created_at', 'DESC')->get();
 
         return view('anboJitsu', [
             'anboJitsu' => $anboJitsu
         ]);
     }
     public function blernsball() {
-        $blernsball = Article::where('category', 'blernsball')->get();
+        $blernsball = Article::where('category', 'blernsball')->orderBy('created_at', 'DESC')->get();
 
         return view('blernsball', [
             'blernsball' => $blernsball
@@ -53,7 +53,7 @@ class ArticleController extends Controller
     }
     
     public function sewer() {
-        $sewers = Article::where('category', 'Sewer Surfin')->get();
+        $sewers = Article::where('category', 'Sewer Surfin')->orderBy('created_at', 'DESC')->get();
 
         return view('sewerSurfin', [
             'sewers' => $sewers
@@ -61,7 +61,7 @@ class ArticleController extends Controller
     }
 
     public function fotBoule() {
-        $fots = Article::where('category', 'Fot-Boule')->get();
+        $fots = Article::where('category', 'Fot-Boule')->orderBy('created_at', 'DESC')->get();
 
         return view('fotBoule', [
             'fots' => $fots
@@ -69,7 +69,7 @@ class ArticleController extends Controller
     }
 
     public function quidditch() {
-        $quidditchs = Article::where('category', 'Quidditch')->get();
+        $quidditchs = Article::where('category', 'Quidditch')->orderBy('created_at', 'DESC')->get();
 
         return view('quidditch', [
             'quidditchs' => $quidditchs
@@ -77,7 +77,7 @@ class ArticleController extends Controller
     }
 
     public function lightsaber() {
-        $lightsabers = Article::where('category', 'Lightsaber fencing')->get();
+        $lightsabers = Article::where('category', 'Lightsaber fencing')->orderBy('created_at', 'DESC')->get();
 
         return view('lightsaber', [
             'lightsabers' => $lightsabers
@@ -85,7 +85,7 @@ class ArticleController extends Controller
     }
 
     public function dejarik() {
-        $dejariks = Article::where('category', 'Dejarik')->get();
+        $dejariks = Article::where('category', 'Dejarik')->orderBy('created_at', 'DESC')->get();
 
         return view('dejarik', [
             'dejariks' => $dejariks
